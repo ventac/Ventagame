@@ -30,10 +30,10 @@
         <fieldset>
                 <legend><h3>Head</h3></legend>
 
-            <p><label for="">Hair </label><input type="range" name="tHair" id="cHair" min="0" max="10" checked="0"></p>
+            <p><label for="">Hair </label><input type="range" name="tHair" id="cHair" min="0" max="10" checked="0" list="" value="random" step=""></p>
             <p><label for="cEyebrows">Eyebrows <input type="range" name="" id="" min="0" max="10" placeholder="numb"></label></p>
             <p><label for="cEyes">Eyes <input type="range" name="tEyes" id="cEyes" min="0" max="10" placeholder="numb"></label></p>
-            <p><label for="cNose">Nose <input type="range" name="tNose" id="cNose" min="0" max="10" placeholder="numb"></label></p>
+            <p><label for="cNose">Nose <input type="range" name="tNose" id="cNose" min="0" max="10" placeholder="numb" onmou></label></p>
         </fieldset>
 
         <fieldset>
@@ -42,6 +42,18 @@
 
         </fieldset>
         <input type="submit" name="submit" id="cSubmit">
+
+        <fieldset>
+        <input type="range" id="myRange" value="20" min="0" max="10" onmousemove="myFunction()">
+        <p id="demo"></p>
+        
+        <script>
+        function myFunction() {
+          var x = document.getElementById("myRange").value;
+          document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+        </fieldset>
 
 
     </form>
