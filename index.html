@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ventagame</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+
+    <form action="" id="createCharacter">
+        <legend id="createtxt"><h1>Create a</h1> <h1>Character</h1></legend>
+
+        <fieldset>
+            <legend><h3>Name</h3></legend>
+                <input type="text" name="tName" id="cName" required maxlength="20">
+        </fieldset>
+
+
+        <fieldset>
+            <legend><h3>Gender</h3></legend>
+                <p><input type="radio" name="tGender" id="cMale" checked="yes"> <label for="cMale">Male</label></p>
+                <p><input type="radio" name="tGender" id="cFemale"><label for="cFemale">Female</label></p>
+        </fieldset>
+
+
+        <fieldset>
+                <legend><h3>Head</h3></legend>
+
+            <p><label for="">Hair </label><input type="range" name="tHair" id="cHair" min="0" max="10" checked="0"></p>
+            <p><label for="cEyebrows">Eyebrows <input type="range" name="" id="" min="0" max="10" placeholder="numb"></label></p>
+            <p><label for="cEyes">Eyes <input type="range" name="tEyes" id="cEyes" min="0" max="10" placeholder="numb"></label></p>
+            <p><label for="cNose">Nose <input type="range" name="tNose" id="cNose" min="0" max="10" placeholder="numb"></label></p>
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>Body</h3></legend>
+
+
+        </fieldset>
+        <input type="submit" name="submit" id="cSubmit">
+
+
+    </form>
+
+
+
+<img id="char" src="examplechar.png" alt="characterPreview" srcset="">
+
+
+
+</body>
+</html>
