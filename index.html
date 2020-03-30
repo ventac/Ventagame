@@ -8,15 +8,38 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
-<body>
-    
+<body>    
 
+
+
+<!---------------BOTAR NUM IFRAME---------------------->    
     <form action="" id="createCharacter">
         <legend id="createtxt"><h1>Create a</h1> <h1>Character</h1></legend>
 
-        <fieldset>
+        <fieldset id="Race">
+            <legend><h3>Race</h3></legend>
+                <p><select name="tRace" id="cRace">
+                    <optgroup label="Humanoids">
+                    	<option value="H" selected>Human</option>
+                    	<option value="T">Tiefling</option>
+                    	<option value="E">Elf</option>
+                    </optgroup>
+                    <optgroup label="Beasts">
+                        <option value="O">Orc</option>
+                        <option value="D">Dog</option>
+                    </optgroup>
+                </select></p>
+        </fieldset>
+
+        <fieldset id="Name">
             <legend><h3>Name</h3></legend>
-                <input type="text" name="tName" id="cName" required maxlength="20">
+                <input type="text" name="tName" id="cName" required maxlength="20" list="nomes">
+                <datalist id="nomes">
+                    <option value="Bosta"></option>
+                    <option value="Lixo"></option>
+                    <option value="Cocô"></option>
+                    <option value="Fezes"></option>
+                </datalist>
         </fieldset>
 
 
